@@ -3,21 +3,24 @@
   "version": "1.0.0",
   "description": "🌸 FlorisUI — A design language where interfaces bloom like flowers",
   "main": "index.js",
+  "module": "index.js",
   "style": "css/style.css",
   "files": [
     "css/",
     "js/",
-    "index.js"
+    "index.js",
+    "README.md"
   ],
   "keywords": [
     "florisui",
     "design-system",
     "css",
-    "ui",
+    "ui-framework",
     "design",
     "glassmorphism",
     "animations",
-    "organic-ui"
+    "organic-ui",
+    "bloom"
   ],
   "author": "Lulu68lila",
   "license": "MIT",
@@ -25,7 +28,7 @@
     "type": "git",
     "url": "git+https://github.com/Lulu68lila/FlorisUI.git"
   },
-  "homepage": "https://github.com/Lulu68lila/FlorisUI#readme",
+  "homepage": "https://florisui.netlify.app",
   "bugs": {
     "url": "https://github.com/Lulu68lila/FlorisUI/issues"
   }
