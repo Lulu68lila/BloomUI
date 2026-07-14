@@ -1,0 +1,32 @@
+{
+  "name": "bloomui",
+  "version": "1.0.0",
+  "description": "🌸 BloomUI — A design language where interfaces bloom like flowers",
+  "main": "index.js",
+  "style": "css/style.css",
+  "files": [
+    "css/",
+    "js/",
+    "index.js"
+  ],
+  "keywords": [
+    "bloomui",
+    "design-system",
+    "css",
+    "ui",
+    "design",
+    "glassmorphism",
+    "animations",
+    "organic-ui"
+  ],
+  "author": "Lulu68lila",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lulu68lila/BloomUI.git"
+  },
+  "homepage": "https://github.com/Lulu68lila/BloomUI#readme",
+  "bugs": {
+    "url": "https://github.com/Lulu68lila/BloomUI/issues"
+  }
+}
