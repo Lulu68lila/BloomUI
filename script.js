@@ -236,8 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function setSliderPosition(x) {
       const rect = sliderContainer.getBoundingClientRect();
       let pos = ((x - rect.left) / rect.width) * 100;
-      pos = Math.max(10, Math.min(90, pos));
-      sliderBefore.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
+      pos = Math.max(0, Math.min(100, pos));
+      sliderBefore.style.clipPath = `inset(0 ${pos}% 0 0)`;
       sliderHandle.style.left = `${pos}%`;
     }
 
@@ -294,6 +294,49 @@ document.addEventListener('DOMContentLoaded', () => {
         layer.style.transform = 'translate(0, 0)';
         layer.style.transition = 'transform 0.4s ease';
       });
+    });
+  }
+
+  /* ==============================
+     MAGNETIC BUTTON
+  ============================== */
+
+  const magneticTarget = document.querySelector('.animation-magnetic-target span');
+  if (magneticTarget) {
+    const wrapper = magneticTarget.closest('.animation-magnetic-target');
+
+    wrapper.addEventListener('mousemove', (e) => {
+      const rect = wrapper.getBoundingClientRect();
+      const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
+      const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
+      magneticTarget.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    wrapper.addEventListener('mouseleave', () => {
+      magneticTarget.style.transform = 'translate(0, 0)';
+      magneticTarget.style.transition = 'transform 0.4s ease';
+      setTimeout(() => { magneticTarget.style.transition = ''; }, 400);
+    });
+  }
+
+  /* ==============================
+     RIPPLE EFFECT
+  ============================== */
+
+  const rippleTarget = document.querySelector('.animation-ripple-target');
+  if (rippleTarget) {
+    rippleTarget.addEventListener('click', (e) => {
+      const rect = rippleTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const ripple = document.createElement('span');
+      ripple.className = 'animation-ripple-effect';
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = ripple.style.height = `${size}px`;
+      ripple.style.left = `${x - size / 2}px`;
+      ripple.style.top = `${y - size / 2}px`;
+      rippleTarget.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
     });
   }
 
@@ -358,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animateCursor();
 
-    document.querySelectorAll('.principle-card, .gallery-card, .btn').forEach(el => {
+    document.querySelectorAll('.principle-card, .btn').forEach(el => {
       el.addEventListener('mouseenter', () => {
         cursor.style.width = '40px';
         cursor.style.height = '40px';
@@ -376,7 +419,7 @@ document.addEventListener('DOMContentLoaded', () => {
      TILT EFFECT ON CARDS
   ============================== */
 
-  const tiltCards = document.querySelectorAll('.principle-card, .gallery-card');
+  const tiltCards = document.querySelectorAll('.principle-card');
   tiltCards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
