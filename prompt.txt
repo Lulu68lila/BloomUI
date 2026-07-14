@@ -1,0 +1,267 @@
+# Prompt — Créer le site officiel de BloomUI
+
+Crée un site web **100 % original** présentant **BloomUI**, un nouveau langage de design pour les interfaces web.
+
+Le site **doit lui-même être conçu selon les principes de BloomUI**. Il ne doit pas seulement parler de BloomUI : il doit en être la démonstration.
+
+## Identité
+
+Nom : **BloomUI**
+
+Slogan : **Interfaces that Bloom. 🌸**
+
+Mission :
+Créer des interfaces modernes, artistiques et vivantes qui restent intuitives, performantes et professionnelles.
+
+---
+
+# Direction artistique
+
+Le site doit donner l'impression d'un produit premium, innovant et créatif.
+
+Le visiteur doit avoir envie d'explorer chaque section.
+
+Inspirations :
+
+* Apple
+* Figma
+* Linear
+* Framer
+* Raycast
+* Stripe
+
+Mais avec une personnalité beaucoup plus expressive et chaleureuse.
+
+---
+
+# Le style BloomUI
+
+Le site doit respecter les principes suivants :
+
+• Animations fluides et naturelles.
+• Beaucoup de micro-interactions.
+• Dégradés élégants.
+• Éléments organiques.
+• Formes flottantes.
+• Cartes modernes.
+• Légers effets de verre (Glassmorphism).
+• Ombres douces.
+• Bordures lumineuses.
+• Profondeur.
+• Arrière-plan vivant avec particules discrètes.
+• Légère parallaxe.
+• Icônes modernes.
+• Illustrations originales.
+• Responsive.
+• Accessibilité.
+• Excellentes performances.
+
+Aucune animation ne doit être inutile : chaque effet doit améliorer l'expérience.
+
+---
+
+# Palette
+
+Fond :
+Noir profond légèrement bleuté.
+
+Couleurs principales :
+
+* Bleu
+* Violet
+* Cyan
+* Rose
+* Blanc
+
+Les couleurs doivent être utilisées avec harmonie.
+
+---
+
+# Police
+
+Utiliser une police moderne comme :
+
+Inter
+
+ou
+
+Geist
+
+avec une hiérarchie typographique très soignée.
+
+---
+
+# Landing Hero
+
+Créer un Hero impressionnant.
+
+Grand titre :
+
+"Interfaces that Bloom."
+
+Sous-titre :
+
+"Le design ne devrait pas seulement être fonctionnel. Il devrait être vivant."
+
+Deux boutons :
+
+Explorer BloomUI
+
+Voir les principes
+
+Le fond doit être animé.
+
+Le titre peut avoir un léger dégradé animé.
+
+Des formes colorées flottent lentement autour.
+
+---
+
+# Sections
+
+## Qu'est-ce que BloomUI ?
+
+Expliquer que BloomUI est un langage de design qui cherche à rendre Internet plus vivant.
+
+Les interfaces doivent transmettre une émotion.
+
+Le but est de créer des expériences mémorables.
+
+---
+
+## Pourquoi BloomUI ?
+
+Comparer rapidement les interfaces classiques et BloomUI.
+
+Interface classique :
+
+* froide
+* prévisible
+* statique
+
+BloomUI :
+
+* vivante
+* artistique
+* expressive
+* élégante
+* moderne
+* mémorable
+
+Faire cette comparaison avec une animation avant/après.
+
+---
+
+## Les 7 principes
+
+Créer de magnifiques cartes interactives.
+
+Chaque carte possède une illustration.
+
+Les principes :
+
+🌸 Vivant
+
+🎨 Artistique
+
+✨ Élégant
+
+🎉 Joueur
+
+⚡ Fluide
+
+💖 Humain
+
+🌱 Évolutif
+
+Les cartes réagissent au survol.
+
+---
+
+## Galerie
+
+Créer plusieurs faux aperçus de sites utilisant BloomUI.
+
+Portfolio
+
+Cybersécurité
+
+SaaS
+
+Application IA
+
+Jeu vidéo
+
+Dashboard
+
+Restaurant
+
+Chaque carte possède une animation au survol.
+
+---
+
+## Les animations
+
+Présenter les animations BloomUI.
+
+Hover.
+
+Transitions.
+
+Glass.
+
+Parallaxe.
+
+Particules.
+
+Micro-interactions.
+
+Tout doit être démontré directement.
+
+---
+
+## Citation
+
+Créer une grande citation.
+
+"Nous ne concevons pas seulement des interfaces.
+
+Nous leur donnons une personnalité."
+
+---
+
+## Rejoindre le mouvement
+
+Inviter designers et développeurs à adopter BloomUI.
+
+Créer un magnifique bouton.
+
+"Start Building with BloomUI"
+
+---
+
+# Footer
+
+BloomUI
+
+Interfaces that Bloom.
+
+Un footer élégant.
+
+---
+
+# Règles importantes
+
+Le site doit être spectaculaire sans être surchargé.
+
+Le design doit sembler vivant.
+
+Les animations doivent être douces.
+
+Chaque section doit surprendre.
+
+Le visiteur doit immédiatement comprendre la philosophie de BloomUI simplement en naviguant sur le site.
+
+Le site doit donner l'impression que BloomUI est un véritable langage de design reconnu, avec une identité forte, une documentation en préparation et une vision à long terme.
+
+L'objectif n'est pas de créer un simple portfolio, mais une expérience immersive qui montre ce que signifie réellement : **Interfaces that Bloom.** 🌸
