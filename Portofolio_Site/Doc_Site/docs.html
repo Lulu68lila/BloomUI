@@ -304,13 +304,23 @@
         <a href="#card">Card</a>
         <a href="#navbar">Navbar</a>
 
+        <span class="section-label">React</span>
+        <a href="#react-install">Installation</a>
+        <a href="#react-btn">Button</a>
+        <a href="#react-toggle">Toggle</a>
+        <a href="#react-slider">Slider</a>
+        <a href="#react-accordion">Accordion</a>
+        <a href="#react-input">Input</a>
+        <a href="#react-card">Card</a>
+
         <span class="section-label">Package</span>
         <a href="#npm">npm</a>
       </nav>
     </aside>
 
     <main class="docs-content">
-      <h1>FlorisUI Docs</h1>
+      <img src="../logo.png" alt="FlorisUI" style="width:200px;height:200px;border-radius:40px;margin-bottom:28px;display:block">
+      <h1>FlorisUI Docs <span style="font-size:0.9rem;background:rgba(139,92,246,0.15);padding:4px 12px;border-radius:20px;color:var(--violet-light);vertical-align:middle;font-family:var(--font-sans);-webkit-text-fill-color:var(--violet-light)">v1.0.1</span></h1>
       <p>Apprenez à installer, utiliser et personnaliser FlorisUI dans vos projets.</p>
 
       <h2 id="install">Installation</h2>
@@ -539,26 +549,150 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 });</code></pre>
 
-      <h2 id="npm">Package npm</h2>
-      <p>FlorisUI est disponible sur npm. Pour l'utiliser dans un projet avec un bundler :</p>
+      <h2 id="npm">Packages npm <span style="font-size:0.7rem;background:rgba(139,92,246,0.15);padding:2px 10px;border-radius:20px;color:var(--violet-light);vertical-align:middle">v1.0.1</span></h2>
 
+      <h3>florisui (CSS)</h3>
       <pre><code class="language-bash">npm install florisui</code></pre>
-
-      <pre><code class="language-javascript">// Import du CSS
-import 'florisui/css/style.css';
-
-// Import du JS (optionnel, pour les animations)
+      <pre><code class="language-javascript">import 'florisui/css/style.css';
 import 'florisui/js/main.js';</code></pre>
 
-      <p>Ou importez uniquement les parties dont vous avez besoin :</p>
-
-      <pre><code class="language-javascript">// Import des variables et composants spécifiques
-import 'florisui/css/variables.css';
-import 'florisui/css/components/button.css';</code></pre>
+      <h3>florisui-react (React)</h3>
+      <pre><code class="language-bash">npm install florisui-react</code></pre>
+      <pre><code class="language-jsx">import { Button, Toggle, Slider, Accordion, Input, Card } from 'florisui-react';
+import 'florisui-react/dist/style.css';</code></pre>
 
       <div class="doc-callout">
-        <strong>📦 À venir :</strong> Composants React, Vue et Svelte. <a href="https://github.com/Lulu68lila/FlorisUI" target="_blank">Contribuer sur GitHub →</a>
+        <strong>📦 React disponible dès maintenant !</strong> Consultez la section React ci-dessous pour la documentation des composants.
       </div>
+
+      <h2 id="react-install">React — Installation</h2>
+      <p><code>florisui-react</code> fournit des composants React prêts à l'emploi avec le style FlorisUI intégré.</p>
+
+      <pre><code class="language-bash">npm install florisui-react</code></pre>
+
+      <p>Importez le CSS et les composants dans votre projet :</p>
+
+      <pre><code class="language-jsx">import 'florisui-react/dist/style.css';
+import { Button } from 'florisui-react';
+
+function App() {
+  return &lt;Button variant="primary"&gt;Hello FlorisUI&lt;/Button&gt;;
+}</code></pre>
+
+      <h2 id="react-btn">Button (React)</h2>
+      <p>Bouton avec effet de glow qui suit la souris.</p>
+
+      <pre><code class="language-jsx">import { Button } from 'florisui-react';
+
+&lt;Button variant="primary"&gt;Primary&lt;/Button&gt;
+&lt;Button variant="ghost"&gt;Ghost&lt;/Button&gt;
+&lt;Button variant="primary" glow={false}&gt;Sans glow&lt;/Button&gt;</code></pre>
+
+      <table class="props-table">
+        <tr><th>Prop</th><th>Type</th><th>Défaut</th><th>Description</th></tr>
+        <tr><td>variant</td><td>'primary' | 'ghost'</td><td>'primary'</td><td>Style du bouton</td></tr>
+        <tr><td>glow</td><td>boolean</td><td>true</td><td>Affiche l'effet de lumière</td></tr>
+        <tr><td>children</td><td>ReactNode</td><td>—</td><td>Contenu du bouton</td></tr>
+      </table>
+
+      <h2 id="react-toggle">Toggle (React)</h2>
+      <p>Interrupteur organique avec mode contrôlé ou non-contrôlé.</p>
+
+      <pre><code class="language-jsx">import { Toggle } from 'florisui-react';
+
+// Non-contrôlé
+&lt;Toggle label="Activer" /&gt;
+
+// Contrôlé
+&lt;Toggle checked={isOn} onChange={setIsOn} label="WiFi" /&gt;</code></pre>
+
+      <table class="props-table">
+        <tr><th>Prop</th><th>Type</th><th>Défaut</th><th>Description</th></tr>
+        <tr><td>checked</td><td>boolean</td><td>—</td><td>État contrôlé</td></tr>
+        <tr><td>onChange</td><td>(checked: boolean) =&gt; void</td><td>—</td><td>Callback de changement</td></tr>
+        <tr><td>label</td><td>string</td><td>—</td><td>Texte affiché à côté</td></tr>
+      </table>
+
+      <h2 id="react-slider">Slider (React)</h2>
+      <p>Slider avec remplissage dégradé et valeur affichée.</p>
+
+      <pre><code class="language-jsx">import { Slider } from 'florisui-react';
+
+&lt;Slider min={0} max={100} defaultValue={50} /&gt;
+&lt;Slider value={volume} onChange={setVolume} /&gt;</code></pre>
+
+      <table class="props-table">
+        <tr><th>Prop</th><th>Type</th><th>Défaut</th><th>Description</th></tr>
+        <tr><td>min</td><td>number</td><td>0</td><td>Valeur minimale</td></tr>
+        <tr><td>max</td><td>number</td><td>100</td><td>Valeur maximale</td></tr>
+        <tr><td>step</td><td>number</td><td>1</td><td>Pas d'incrémentation</td></tr>
+        <tr><td>defaultValue</td><td>number</td><td>50</td><td>Valeur initiale</td></tr>
+        <tr><td>value</td><td>number</td><td>—</td><td>Valeur contrôlée</td></tr>
+        <tr><td>onChange</td><td>(value: number) =&gt; void</td><td>—</td><td>Callback de changement</td></tr>
+      </table>
+
+      <h2 id="react-accordion">Accordion (React)</h2>
+      <p>Accordéon avec pétale animé. Fonctionne avec une liste d'éléments.</p>
+
+      <pre><code class="language-jsx">import { Accordion } from 'florisui-react';
+
+const items = [
+  { id: '1', icon: '🌸', title: 'Titre', content: 'Contenu...' },
+  { id: '2', icon: '🎨', title: 'Titre 2', content: 'Contenu...' },
+];
+
+&lt;Accordion items={items} /&gt;</code></pre>
+
+      <table class="props-table">
+        <tr><th>Prop</th><th>Type</th><th>Description</th></tr>
+        <tr><td>items</td><td>AccordionItem[]</td><td>Liste des éléments</td></tr>
+      </table>
+
+      <p><strong>AccordionItem :</strong> <code>{id: string, icon: string, title: string, content: string}</code></p>
+
+      <h2 id="react-input">Input (React)</h2>
+      <p>Champ de texte avec floating label, bordure glow et compteur.</p>
+
+      <pre><code class="language-jsx">import { Input } from 'florisui-react';
+
+&lt;Input label="Votre email" type="email" /&gt;
+&lt;Input label="Message" maxCount={50} /&gt;</code></pre>
+
+      <table class="props-table">
+        <tr><th>Prop</th><th>Type</th><th>Défaut</th><th>Description</th></tr>
+        <tr><td>label</td><td>string</td><td>—</td><td>Étiquette flottante</td></tr>
+        <tr><td>maxCount</td><td>number</td><td>20</td><td>Longueur maximale</td></tr>
+      </table>
+
+      <div class="doc-callout">
+        <strong>💡 Note :</strong> Input accepte aussi toutes les props natives d'<code>&lt;input&gt;</code> (type, placeholder, etc.)
+      </div>
+
+      <h2 id="react-card">Card (React)</h2>
+      <p>Carte glassmorphique avec effet 3D au survol.</p>
+
+      <pre><code class="language-jsx">import { Card } from 'florisui-react';
+
+&lt;Card
+  icon="🌸"
+  title="FlorisUI"
+  description="Une carte avec effet 3D"
+/&gt;
+
+&lt;Card
+  title="Sans icône"
+  description="Carte sans effet 3D"
+  tilt={false}
+/&gt;</code></pre>
+
+      <table class="props-table">
+        <tr><th>Prop</th><th>Type</th><th>Défaut</th><th>Description</th></tr>
+        <tr><td>icon</td><td>string</td><td>—</td><td>Emoji ou icône</td></tr>
+        <tr><td>title</td><td>string</td><td>—</td><td>Titre de la carte</td></tr>
+        <tr><td>description</td><td>string</td><td>—</td><td>Description</td></tr>
+        <tr><td>tilt</td><td>boolean</td><td>true</td><td>Active l'effet 3D</td></tr>
+        <tr><td>className</td><td>string</td><td>''</td><td>Classes additionnelles</td></tr>
+      </table>
 
     </main>
   </div>
