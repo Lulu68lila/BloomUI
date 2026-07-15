@@ -1,1 +1,1 @@
-import '../../Portofolio_Site/css/style.css';
+import '../css/style.css';
